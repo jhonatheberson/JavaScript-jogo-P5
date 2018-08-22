@@ -92,7 +92,7 @@ var explo = {
 }
 
 function preload(){
-    menu = loadSound('musica.mp3');
+    menu = loadSound('musica/musica.mp3');
     for(i = 1; i <= 48; i++){
         explo.img[i - 1] = loadImage("img/explosao/exp/exp ("+i+").png");
     }
@@ -132,9 +132,9 @@ function preload(){
 function setup() {
 	createCanvas(lim_x, lim_y);
 	frameRate(60);
-  somexplo = loadSound('esplosao.mp3');
-  somtiro = loadSound('missil.mp3');
-  sombonus = loadSound('bonus.mp3');
+  somexplo = loadSound('musica/esplosao.mp3');
+  somtiro = loadSound('musica/missil.mp3');
+  sombonus = loadSound('musica/bonus.mp3');
   menu.setVolume(0.3);
   menu.play();
 
